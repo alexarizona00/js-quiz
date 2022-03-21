@@ -6,24 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./stylez.css">
+    
 </head>
 
 <body>
     <header class="top-bar">
-        <h1 class="main-title" data-state="pregame">It's quiz time </h1>
-        <h2 class="main-title" data-state="gametime">Time is ticking!</h2>
-        <h2 class="main-title" data-state="post">Lets see how you did</h2>
+        <h1 class="main-title" game-state=""></h1>
     </header>
+
+    <div id="startbutton">
+        <button id="pressme">Start the quiz            
+        </button>
+
+    </div>
     <section id="quizarea">
-        <div id="question">
+        <div id="question">asdsad
         </div>
 
-        <ol class="choices">
-            <li id="a"></li>
-            <li id="b"></li>
-            <li id="c"></li>
-            <li id="d"></li>
-        </ol>
+        <article class="choices">
+            <button id="a">#</button>
+            <button id="b">#</button>
+            <button id="c">#</button>
+            <button id="d">#</button>
+        </article>
     </section>
 
     <section id="timerarea">
@@ -31,7 +37,7 @@
         <div id="thetimer">this is where the timer goes</div>
     </section>
 
-
+ <script src="./script.js"></script>
 </body>
 
 </html>
