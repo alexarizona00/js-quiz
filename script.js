@@ -12,8 +12,8 @@ headerElem.setAttribute('game-state', 'pregame')
 let correctcount = 0;
 let wrongcount = 0;
 currentQuestion = 0;
-timerCount = document.querySelector
-;
+let timeLeft = 59;
+let timerCountEl = document.querySelector("#thetimer");
 
 
 headerCheck();
@@ -23,6 +23,7 @@ headerCheck();
 function startQuiz() {
     headerElem.setAttribute('game-state', 'gametime')
     headerCheck()
+    timerGo()
     questionElem.textContent = questions[1]
 
     console.log('quiz started')
@@ -79,13 +80,16 @@ function gameOver() {
 }
 
 function timerGo(){
+    startButton.setAttribute('style', 'display: none')
     let timerInterval = setInterval(function(){
 timeLeft--;
-timerCount.textContent = timeLeft + "seconds remaining"
+timerCountEl.textContent = timeLeft + " seconds remaining"
 if (timeLeft == 1)
-timerCount.textContent = timeLeft + "second remaining"
+timerCountEl.textContent = timeLeft + " second remaining"
 if (timeLeft == 0){
     clearInterval(timerInterval);
+    timerCountEl.textContent = "Times up!"
+    headerElem.setAttribute('game-state', 'postgame')
     }
 
 }, 1000)
