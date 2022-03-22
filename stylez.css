@@ -2,3 +2,37 @@ body{
     background-color: darkgoldenrod;
 
 }
+
+
+
+.top-bar{
+  text-align: center;
+}
+
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#pressme{
+
+    text-align: center;
+    border: 2px solid #FF0000;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    margin: 0px auto;
+    padding-top: 10px; 
+    display: block;
+    margin-top:40px;
+}

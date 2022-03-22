@@ -12,6 +12,8 @@ headerElem.setAttribute('game-state', 'pregame')
 let correctcount = 0;
 let wrongcount = 0;
 currentQuestion = 0;
+timerCount = document.querySelector
+;
 
 
 headerCheck();
@@ -76,10 +78,19 @@ function gameOver() {
     console.log('the game has ended')
 }
 
+function timerGo(){
+    let timerInterval = setInterval(function(){
+timeLeft--;
+timerCount.textContent = timeLeft + "seconds remaining"
+if (timeLeft == 1)
+timerCount.textContent = timeLeft + "second remaining"
+if (timeLeft == 0){
+    clearInterval(timerInterval);
+    }
+
+}, 1000)
+}
+
 startButton.addEventListener('click', startQuiz)
 
 
-
-if (questions[6])[
-    console.log('6 worked')
-]
