@@ -13,7 +13,7 @@ headerElem.setAttribute('game-state', 'pregame')
 let correctcount = 0;
 let wrongcount = 0;
 let currentQuestion = 0;
-let timeLeft = 5;
+let timeLeft = 60;
 let timerCountEl = document.querySelector("#thetimer");
 let alltheButtons = document.querySelector('.choices');
 let selectedAnswer = '';
@@ -52,17 +52,16 @@ choiceD.addEventListener('click', function () {
 })
 
 
-if (correctAnswers.includes(selectedAnswer){
+if (correctAnswers.includes(selectedAnswer)){
     correctcount++
 }
     else{
         wrongcount++
-
+        timeLeft -= 5
     }
 
 
 //)
-
 
 // checks to see the game state and which header to display
 function headerCheck() {
