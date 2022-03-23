@@ -4,9 +4,25 @@ body{
 }
 
 
-
+#thetimer{
+    text-align: center;
+    padding-top: 10%;
+}
 .top-bar{
   text-align: center;
+}
+#quizarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display:
+
+}
+#question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
 }
 
 
