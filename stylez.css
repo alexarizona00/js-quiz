@@ -52,3 +52,11 @@ body{
     margin-top:40px;
 }
  
+#score{
+    display: none;
+}
+
+#scoretable{
+    display: none;
+    border: 5px dotted black;
+}
