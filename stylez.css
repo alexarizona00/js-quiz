@@ -60,3 +60,28 @@ body{
     display: none;
     border: 5px dotted black;
 }
+#reset{
+    display: none;
+
+}
+#question{
+    font-size: xx-large;
+}
+
+.score1{
+    font-weight: bolder;
+color: green;
+}
+
+.score2{
+    color: red;
+    font-weight: bolder;
+
+
+}
+.totalscore{
+    color: blue;
+    font-weight: bolder;
+
+
+}
